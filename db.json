@@ -1,14 +1,98 @@
 {
+  "wishlist": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "My Wishlist",
+      "dateCreated": "2023-09-06 T12:05:30",
+      "itemList": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "PS5 and games",
+      "dateCreated": "2023-09-06 T13:12:43",
+      "itemList": [
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "My Wishlist",
+      "dateCreated": "2023-09-10 T10:45:21",
+      "itemList": [
+        {
+          "id": 6
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "itemName": "Baldur's Gate 3",
-      "category": "PC Games",
-      "dateAdded": "2023-09-06"
+      "name": "Apple iPhone 14 (128 GB) - Midnight",
+      "description": "The iPhone 14 feature a 6.1-inch (15 cm) and 6.7-inch (17 cm) display, improvements to the rear-facing camera, and satellite connectivity for contacting emergency services when a user in trouble is beyond the range of Wi-Fi or cellular networks",
+      "dateAdded": "2023-09-06 T12:05:55"
+    },
+    {
+      "id": 2,
+      "name": "SAMSUNG Galaxy Z Flip 5 8/256GB",
+      "description": "Join the flip side with the phone that’s tiny, trendy and totally flex-worthy. With an impressive cover screen and foldable design, Galaxy Z Flip5 packs big innovation into a pocket-perfect phone.",
+      "dateAdded": "2023-09-06 T12:06:22"
+    },
+    {
+      "id": 3,
+      "name": "PlayStation 5 Console",
+      "description": "The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio, and an all-new generation of incredible PlayStation games.",
+      "dateAdded": "2023-09-06 T13:15:43"
+    },
+    {
+      "id": 4,
+      "name": "Final Fantasy XVI (PS5)",
+      "description": "The sun is setting upon the land of Valisthea. For centuries, people have flocked to her Mothercrystals to partake of their blessing—the abundant aether that fuels the magicks they rely upon in their everyday lives. But as the aether begins to fade and the lifeless deadlands spread ever further, so too does the struggle over the final flickers of the Mothers' light grow ever more fierce. Bloody battle rages across the realm, rival nations sending their ultimate weapons against each other: the Dominants. Men and women within whom sleep the world-shattering power of an Eikon.",
+      "dateAdded": "2023-09-06 T13:17:47"
+    },
+    {
+      "id": 5,
+      "name": "Star Wars Jedi: Fallen Order (PS5)",
+      "description": "A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a new 3rd person action-adventure title from Respawn Entertainment. This narratively-driven single player game puts you in the role of a Jedi Padawan who narrowly escaped the purge of Order 66 following the events of Episode 3: Revenge of the Sith. On a quest to rebuild the Jedi Order, you must pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities, and master the art of the iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.",
+      "dateAdded": "2023-09-10 T13:18:21"
+    },
+    {
+      "id": 6,
+      "name": "JBL Go 3 Eco: Portable Speaker with Bluetooth",
+      "description": "JBL Go 3 Eco features bold styling and rich JBL Original Pro Sound. It's made from up to 90% post-consumer recycled plastic and 100% recycled fabric on the speaker grille. It’s IP67 waterproof and dustproof so you can keep listening rain or shine, and with its integrated loop, you can carry it anywhere. JBL Go 3 Eco looks as vivid as it sounds. ",
+      "dateAdded": "2023-09-06 T11:18:20"
     }
   ],
-  "users": {
-    "id": "1",
-    "username": "magda"
-  }
+  "users": [
+    {
+      "id": 1,
+      "username": "jankowalski",
+      "firstName": "Jan",
+      "lastName": "Kowalski"
+    },
+    {
+      "id": 2,
+      "username": "annamaria",
+      "firstName": "Anna",
+      "lastName": "Nowak"
+    }
+  ]
 }
