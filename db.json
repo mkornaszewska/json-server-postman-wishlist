@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "itemName": "Baldur's Gate 3",
+      "category": "PC Games",
+      "dateAdded": "2023-09-06"
+    }
+  ],
+  "users": {
+    "id": "1",
+    "username": "magda"
+  }
+}
