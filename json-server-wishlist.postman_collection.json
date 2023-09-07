@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "bfb8c863-a864-4e6b-8a59-6ea109e5e961",
+		"name": "json-server-wishlist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29564192"
+	},
+	"item": [
+		{
+			"name": "wishlist",
+			"item": [
+				{
+					"name": "all wishlists",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body matches string: dateCreated\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"dateCreated\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{jsonServer_url}}/wishlist",
+							"host": [
+								"{{jsonServer_url}}"
+							],
+							"path": [
+								"wishlist"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "possible values: 1, 2, 3",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "1",
+									"description": "possible values: 1, 2",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "My Wishlist",
+									"description": "possible values: My Wishlist, PS5 and games",
+									"disabled": true
+								},
+								{
+									"key": "dateCreated",
+									"value": "2023-09-06 T12:05:30",
+									"description": "possible values: 2023-09-06 T12:05:30, 2023-09-06 T13:12:43, 2023-09-10 T10:45:21",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new wishlist",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"pm.test(\"Body matches string: dateCreated\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"dateCreated\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": {{$randomInt}},\r\n    \"userId\": {{$randomInt}},\r\n    \"name\": \"{{$randomFirstName}}'s wishlist\",\r\n    \"dateCreated\": \"{{$isoTimestamp}}\",\r\n    \"itemList\": [\r\n        {\r\n            \"id\": {{$randomInt}}\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{jsonServer_url}}/wishlist",
+							"host": [
+								"{{jsonServer_url}}"
+							],
+							"path": [
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "items",
+			"item": []
+		},
+		{
+			"name": "users",
+			"item": []
+		}
+	]
+}
